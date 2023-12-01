@@ -1,16 +1,18 @@
 {
-    "compilerOptions": {
-        "target": "ES2021",
-        "module": "NodeNext",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "skipLibCheck": true,
-        "types": [
-            "node"
-        ],
-        "outDir": "dist",
-        "noEmit": true,
-        "allowImportingTsExtensions": true,
-    }
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "types": ["node"],
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules" , "dist", "*.test.ts"]
 }
