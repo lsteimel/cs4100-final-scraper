@@ -1,0 +1,19 @@
+{
+  "name": "twitter-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-esm index.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "proxy-agent": "^6.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

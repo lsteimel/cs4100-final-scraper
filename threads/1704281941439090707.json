@@ -1,0 +1,63 @@
+{
+  "ids": [
+    "1704281941439090707"
+  ],
+  "chunks": [
+    {
+      "id": "1704162576811319601",
+      "twitterUserId": "1287576585353039872",
+      "type": "tweet",
+      "textContent": "One of the benefits of using a rollup is the 1-2 second transaction confirmation time.\n\nBut how are rollups able to do this? Blockchain voodoo magic or some false sense of security?\n\nExplaining the lifecycle of a rollup transaction 🧵: https://t.co/gbEuJUoT6e",
+      "createdAt": 1695138994,
+      "links": [],
+      "media": [
+        {
+          "id": "1704162573271412736",
+          "mediaKey": "3_1704162573271412736",
+          "type": "photo",
+          "imageUrl": "https://pbs.twimg.com/media/F6Zm1NNbsAAmcfk.jpg"
+        }
+      ]
+    },
+    {
+      "id": "1704205507899093330",
+      "twitterUserId": "220774091",
+      "type": "tweet",
+      "textContent": "A few things to note:\n\n1. Due to the single-sequencer setup of rollups today, transactions are instantly confirmed and speculatively finalised on rollup block inclusion. There are no other block producers required to validate/confirm.\n\n2. Hard finality(Stage 3 finality) should only be considered after the dispute period has passed, if no L1 rollbacks have occured prior to it i.e. finality stages 1 and 2. https://twitter.com/thepizzaknight_/status/1642584626366410752?s=46&t=GxyN7qBovxAqEoJW-dTZ8Q\n\n3. The withdrawal of funds process does affect the L2 state and has its respective transaction lifecycle, usually overseen by dedicated opcodes and precompiles.",
+      "createdAt": 1695149230,
+      "links": [
+        {
+          "href": "https://twitter.com/thepizzaknight_/status/1642584626366410752?s=46&t=GxyN7qBovxAqEoJW-dTZ8Q",
+          "startIndex": 408,
+          "endIndex": 500
+        }
+      ],
+      "media": []
+    },
+    {
+      "id": "1704281941439090707",
+      "twitterUserId": "1287576585353039872",
+      "type": "tweet",
+      "textContent": "1) It's not instant, but it's quite fast - OP can take up to 2 seconds to confirm a txn. Other systems may allow for some MEV backrunning as well which adds further latency.\n\n2) Again, the dispute period does not affect L2 state. Withdrawals are a way of convincing the L1 of the current L2 state, there is no way for a dispute to change L2 state.\n\n@rauljordaneth made a great post on this yesterday: https://twitter.com/rauljordaneth/status/1703864326665241021.\n\nThe arbitrum docs further go into finality at each step: https://docs.arbitrum.io/tx-lifecycle - \"nothing that can happen in phase 4 has any effect on the L1-level finality we've already locked in at phase 3\".\n\nI also recommend watching this talk from @kelvinfichter: https://www.youtube.com/watch?v=NKQz9jU0ftg.\n\n3) What precompiles/opcodes are you referring to?",
+      "createdAt": 1695167453,
+      "links": [
+        {
+          "href": "https://twitter.com/rauljordaneth/status/1703864326665241021",
+          "startIndex": 401,
+          "endIndex": 461
+        },
+        {
+          "href": "https://docs.arbitrum.io/tx-lifecycle",
+          "startIndex": 521,
+          "endIndex": 558
+        },
+        {
+          "href": "https://www.youtube.com/watch?v=NKQz9jU0ftg",
+          "startIndex": 732,
+          "endIndex": 775
+        }
+      ],
+      "media": []
+    }
+  ]
+}
